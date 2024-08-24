@@ -91,8 +91,8 @@ h2 {
 
 .header_section.innerpage_header {
   position: relative;
-  background: -webkit-gradient(linear, left top, right top, from(#160e0b), to(#160e0b));
-  background: linear-gradient(to right, #160e0b, #160e0b);
+  background: -webkit-gradient(linear, left top, right top, from(#728c69), to(#728c69));
+  background: linear-gradient(to right, #728c69, #728c69);
   padding: 10px 0;
 }
 
@@ -128,7 +128,7 @@ h2 {
 .custom_menu-btn.menu_btn-style::before {
   width: 100vh;
   height: 100vh;
-  background-color: #160e0b;
+  background-color: #728c69;
   -webkit-transform: scale(5);
           transform: scale(5);
   border-radius: 0;
@@ -468,7 +468,7 @@ a:focus {
   left: 0;
   width: 250px;
   height: 250px;
-  background-color: #160e0b;
+  background-color: #728c69;
 }
 
 .about_section .detail-box p {
@@ -625,7 +625,7 @@ a:focus {
   bottom: -15px;
   padding: 10px 15px;
   font-size: 18px;
-  background-color: #160e0b;
+  background-color: #728c69;
   margin: 0;
   text-align: center;
   border: 3px solid #ffffff;
@@ -653,15 +653,15 @@ a:focus {
   display: inline-block;
   padding: 10px 30px;
   background-color: transparent;
-  color: #160e0b;
+  color: #728c69;
   border-radius: 0;
-  border: 1px solid #160e0b;
+  border: 1px solid #728c69;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
 .blog_section .box .detail-box a:hover {
-  background-color: #160e0b;
+  background-color: #728c69;
   color: #ffffff;
 }
 
@@ -686,7 +686,7 @@ a:focus {
   margin: 45px;
   padding: 35px 25px;
   border-radius: 15px;
-  background-color: #160e0b;
+  background-color: #728c69;
   color: #ffffff;
 }
 
@@ -750,7 +750,7 @@ a:focus {
 
 .client_section .carousel-control-prev:hover,
 .client_section .carousel-control-next:hover {
-  background-color: #160e0b;
+  background-color: #728c69;
 }
 
 .client_section .carousel-control-next {
@@ -758,7 +758,7 @@ a:focus {
 }
 
 .info_section {
-  background-color: #160e0b;
+  background-color: #728c69;
   color: #ffffff;
 }
 

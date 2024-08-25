@@ -58,7 +58,7 @@ $bgColor:#f9fafa;
 }
 
 /* fonts import */
-@import url("../fonts/octin_sports_rg.ttf");
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
 
 body {
   @include main-font;

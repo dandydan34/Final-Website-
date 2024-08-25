@@ -1,21 +1,14 @@
 $white: #ffffff;
 $black: #000000;
-$primary1: #000000;
+$primary1: #fd9c6b;
 $primary2:#728c69;
 $bgColor:#f9fafa;
 
 // import fonts
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
-</style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 900
-
-.darker-grotesque-<uniquifier> {
-  font-family: "Darker Grotesque", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+@mixin main-font {
+  font-family: "Poppins", sans-serif;
 }
 
 @mixin secondary-font {
@@ -58,7 +51,7 @@ $bgColor:#f9fafa;
 }
 
 /* fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+@import url("../fonts/octin_sports_rg.ttf");
 
 body {
   @include main-font;

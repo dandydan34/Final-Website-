@@ -28,15 +28,16 @@
     if (staticProps) _defineProperties(Constructor, staticProps);
     return Constructor;
   }
-  
   window.addEventListener("load", function () {
     const loadingScreen = document.getElementById('loading-screen');
-    
+    const pageContent = document.getElementById('page-content');
+  
     // Delay to ensure the animation finishes before hiding the screen
     setTimeout(() => {
       loadingScreen.style.opacity = '0';
       setTimeout(() => {
         loadingScreen.style.display = 'none';
+        pageContent.style.display = 'block'; // Show the page content
       }, 500); // Match this with the opacity transition duration
     }, 2000); // Adjust this delay to match the total animation time of the letters
   });

@@ -28,7 +28,19 @@
     if (staticProps) _defineProperties(Constructor, staticProps);
     return Constructor;
   }
-
+  
+  window.addEventListener("load", function () {
+    const loadingScreen = document.getElementById('loading-screen');
+    
+    // Delay to ensure the animation finishes before hiding the screen
+    setTimeout(() => {
+      loadingScreen.style.opacity = '0';
+      setTimeout(() => {
+        loadingScreen.style.display = 'none';
+      }, 500); // Match this with the opacity transition duration
+    }, 2000); // Adjust this delay to match the total animation time of the letters
+  });
+  
   function _defineProperty(obj, key, value) {
     if (key in obj) {
       Object.defineProperty(obj, key, {

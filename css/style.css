@@ -204,7 +204,7 @@ h2 {
 .custom_menu-btn.menu_btn-style::before {
   width: 100vh;
   height: 100vh;
-  background-color: #728c69;
+  background-color: #000000;
   -webkit-transform: scale(5);
           transform: scale(5);
   border-radius: 0;

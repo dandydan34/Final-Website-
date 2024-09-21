@@ -156,32 +156,7 @@
   <script src="js/bootstrap.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
-
   <script>
-    const customCursor = document.getElementById('customCursor');
-  
-    document.addEventListener('mousemove', (e) => {
-      customCursor.style.left = e.pageX + 'px';
-      customCursor.style.top = e.pageY + 'px';
-      
-      // Remove invert effect from all elements
-      document.querySelectorAll('.invert-effect').forEach(el => {
-        el.classList.remove('invert-effect');
-      });
-  
-      // Check the element under the cursor
-      const elementUnderCursor = document.elementFromPoint(e.clientX, e.clientY);
-      if (elementUnderCursor) {
-        elementUnderCursor.classList.add('invert-effect');
-      }
-    });
-  
-    document.addEventListener('mouseover', (e) => {
-      if (e.target.closest('.invert-color')) {
-        customCursor.style.backgroundColor = 'rgba(0, 0, 0, 1)'; // Dark color on hover
-      } else {
-        customCursor.style.backgroundColor = 'rgba(255, 255, 255, 1)'; // Light color
-      }
     document.addEventListener("DOMContentLoaded", function() {
       setTimeout(function() {
         document.getElementById("loading-screen").style.display = "none"; // Hide loading screen
@@ -194,4 +169,5 @@
     });
   </script>
 </body>
-</html>}
+
+</html>

@@ -97,6 +97,23 @@ body {
   }
 }
 
+.background-image {
+  /* Set the background image */
+  background-image: url('images/testhome.jpg');
+
+  /* Ensure the background covers the entire page */
+  background-size: cover;
+
+  /* Make sure the image stays centered */
+  background-position: center center;
+
+  /* Prevent the image from repeating */
+  background-repeat: no-repeat;
+
+  /* Set the height to 100% of the viewport */
+  height: 100%;
+}
+
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;

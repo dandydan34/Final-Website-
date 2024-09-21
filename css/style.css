@@ -106,12 +106,13 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh; /* Ensures it takes the full height */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  position: fixed; /* Fixed positioning for full background */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
   display: none; /* Initially hidden */
-}
-
-body.show-background .background-image {
-  display: block; /* Show the background image when class is added */
+  z-index: 1; /* Behind the loading screen */
 }
 
 .heading_container {

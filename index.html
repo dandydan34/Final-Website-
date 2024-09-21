@@ -38,7 +38,10 @@
     </div>
   </div>
 
+<!-- fkn background image -->
   <div class="background-image" style="background-image: url('images/testhome.jpg'); height: 100vh; width: 100vw; position: fixed; top: 0; left: 0; background-size: cover; background-position: center; display: none; z-index: -1;"></div>
+
+  <div class="custom-cursor" id="customCursor"></div>
 
   <body class="fade-in">
     <link rel="icon" href="images/final layer@2x.png" type="image/gif" />
@@ -155,6 +158,30 @@
   <script src="js/custom.js"></script>
 
   <script>
+    const customCursor = document.getElementById('customCursor');
+  
+    document.addEventListener('mousemove', (e) => {
+      customCursor.style.left = e.pageX + 'px';
+      customCursor.style.top = e.pageY + 'px';
+      
+      // Remove invert effect from all elements
+      document.querySelectorAll('.invert-effect').forEach(el => {
+        el.classList.remove('invert-effect');
+      });
+  
+      // Check the element under the cursor
+      const elementUnderCursor = document.elementFromPoint(e.clientX, e.clientY);
+      if (elementUnderCursor) {
+        elementUnderCursor.classList.add('invert-effect');
+      }
+    });
+  
+    document.addEventListener('mouseover', (e) => {
+      if (e.target.closest('.invert-color')) {
+        customCursor.style.backgroundColor = 'rgba(0, 0, 0, 1)'; // Dark color on hover
+      } else {
+        customCursor.style.backgroundColor = 'rgba(255, 255, 255, 1)'; // Light color
+      }
     document.addEventListener("DOMContentLoaded", function() {
       setTimeout(function() {
         document.getElementById("loading-screen").style.display = "none"; // Hide loading screen
@@ -167,5 +194,4 @@
     });
   </script>
 </body>
-
-</html>
+</html>}

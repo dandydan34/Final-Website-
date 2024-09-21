@@ -132,6 +132,21 @@ body {
   z-index: 1; /* Behind the loading screen */
 }
 
+.custom-cursor {
+  position: fixed;
+  width: 20px; /* Size of the circle */
+  height: 20px; /* Size of the circle */
+  background-color: rgba(255, 255, 255, 1); /* Solid color for visibility */
+  border-radius: 50%; /* Make it a circle */
+  pointer-events: none; /* Prevent interference with other elements */
+  transition: background-color 0.2s ease; /* Smooth transition */
+  z-index: 9999; /* Ensure it's on top */
+}
+
+.invert-effect {
+  filter: invert(1); /* Invert colors */
+}
+
 .layout_padding {
   padding: 90px 0;
 }

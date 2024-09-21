@@ -161,12 +161,11 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      // Simulate loading
       setTimeout(function() {
         document.getElementById("loading-screen").style.display = "none"; // Hide loading screen
-        document.body.classList.add('show-background'); // Show background image
+        document.querySelector('.background-image').style.display = 'block'; // Show background image
       }, 3000); // Adjust time as needed
-      
+
       // Display the current year in the footer
       const year = new Date().getFullYear();
       document.getElementById("displayYear").textContent = year;

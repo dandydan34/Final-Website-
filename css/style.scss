@@ -119,22 +119,17 @@ body {
 .letter:nth-child(7) { animation-delay: 1.2s; }
 
 
-.background-image {
-  /* Set the background image */
+/* Background image styling */
+body.background-image {
   background-image: url('images/testhome.jpg');
-
-  /* Ensure the background covers the entire page */
   background-size: cover;
-
-  /* Make sure the image stays centered */
   background-position: center center;
-
-  /* Prevent the image from repeating */
   background-repeat: no-repeat;
-
-  /* Set the height to 100% of the viewport */
-  height: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
+
 
 .layout_padding {
   padding: 90px 0;

@@ -102,7 +102,7 @@ body {
 }
 
 .background-image {
-  background-image: url('testhome.jpg'); /* Update with your image path */
+  background-image: url('images/testhome.jpg'); /* Update with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

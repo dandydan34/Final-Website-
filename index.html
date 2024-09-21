@@ -27,6 +27,42 @@
 
 </head>
 
+<style>
+  body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars */
+  }
+
+  #loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9); /* Loading screen background */
+    position: absolute;
+    width: 100%;
+    z-index: 10; /* Sit on top */
+  }
+
+  .background-image {
+    background-image: url('images/your-image-file.jpg'); /* Update with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    position: fixed; /* Fixed positioning for full background */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    display: none; /* Initially hidden */
+    z-index: 1; /* Behind the loading screen */
+  }
+
+  body.show-background .background-image {
+    display: block; /* Show background when class is added */
+  }
+</style>
+</head>
 
 <body>
   <div id="loading-screen">
@@ -44,12 +80,6 @@
   <body class="fade-in">
     <link rel="icon" href="images/final layer@2x.png" type="image/gif" />
   
-    <div class="background-image">
-      <!-- Your main content goes here -->
-    </div>
-  
-    <script>
-
   </body>  
   <script>
     document.addEventListener("DOMContentLoaded", function() {

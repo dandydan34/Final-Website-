@@ -513,7 +513,9 @@ a:focus {
 // about section
 
 .about_section {
-
+  position: relative; /* Ensure it can stack properly */
+  z-index: 2; /* Higher than background image */
+}
   .row {
     align-items: center;
   }

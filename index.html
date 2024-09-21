@@ -41,8 +41,6 @@
     </div>
   </div>
 
-  <div class="background-image">
-
   <body class="fade-in">
     <link rel="icon" href="images/final layer@2x.png" type="image/gif" />
   </body>  
@@ -52,6 +50,9 @@
     });
   </script>
 
+<div class="background-image">
+  <!-- Your main content goes here -->
+</div>
 
   <!-- header section strats -->
   <header class="header_section">
@@ -162,6 +163,19 @@
   <!-- custom js -->
   <script src="js/custom.js"></script>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Simulate loading
+      setTimeout(function() {
+        document.getElementById("loading-screen").style.display = "none"; // Hide loading screen
+        document.body.classList.add('show-background'); // Show background image
+      }, 3000); // Adjust time as needed
+      
+      // Display the current year in the footer
+      const year = new Date().getFullYear();
+      document.getElementById("displayYear").textContent = year;
+    });
+  </script>
 </body>
 
 </html>

@@ -99,7 +99,7 @@ body {
 
 .background-image {
   /* Set the background image */
-  background-image: url('images/testhome.jpg');
+  background-image: url(images/testhome.jpg);
 
   /* Ensure the background covers the entire page */
   background-size: cover;

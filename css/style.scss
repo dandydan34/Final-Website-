@@ -119,15 +119,12 @@ body {
 .letter:nth-child(7) { animation-delay: 1.2s; }
 
 
-/* Background image styling */
 body.background-image {
-  background-image: url('images/testhome.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
+  background-image: url('images/testhome.jpg'); /* Ensure this path is correct */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100vh; /* Ensures the body takes full height */
 }
 
 
